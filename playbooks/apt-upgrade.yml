@@ -1,0 +1,7 @@
+---
+- hosts: home
+  remote_user: rcameron
+  sudo: yes
+  tasks:
+  - name: Ubuntu Apt Upgrade
+    apt: upgrade=yes update_cache=yes
